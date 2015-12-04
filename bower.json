@@ -1,0 +1,21 @@
+{
+  "name": "kunata",
+  "homepage": "https://github.com/tripsta/kunata",
+  "authors": [
+    "Tripsta <developers@tripsta.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "semantic": "semantic-ui#~2.1.6"
+  }
+}
