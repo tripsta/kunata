@@ -1,12 +1,12 @@
 define([
-	'models/Sprint',
+	'models/sprint',
 	'text!fixtures/sprint.get/response.json',
 	'backbone'
 ], function(SprintModel, data) {
 
 	return Backbone.Router.extend({
 		routes: {
-			'': 'loadSprint'
+			'': 'getSprint'
 		},
 
 		initialize: function() {
