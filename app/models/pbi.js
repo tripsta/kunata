@@ -13,12 +13,6 @@ define([
 			sprint: null,
 			theme: null,
 			epic: null
-		},
-
-		initialize: function (options) {
-			console.log(this);
 		}
 	});
-
 });
-§

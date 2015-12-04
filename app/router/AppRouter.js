@@ -1,20 +1,21 @@
 define([
-	'models/sprint',
-	'text!fixtures/sprint.get/response.json',
+	'models/sprintCollection',
 	'backbone'
-], function(SprintModel, data) {
+], function(sprintCollection) {
 
 	return Backbone.Router.extend({
 		routes: {
-			'': 'getSprint'
+			'': 'getSprint',
+			'sprint/:id': 'getSprint'
 		},
 
 		initialize: function() {
-			console.log(data);
-			this.sprint = new SprintModel(JSON.parse(data));
+			this.sprintCollection = new sprintCollection();
 		},
 
-		getSprint: function () {
+		getSprint: function (id) {
+			this.sprint = this.sprintCollection.get(id);
+			console.log(this.sprint);
 		}
 
 	});

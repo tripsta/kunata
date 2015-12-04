@@ -7,12 +7,7 @@ define([
 			id: null,
 			name: '',
 			squad: '',
-			PBI: null
-		},
-
-		initialize: function (options) {
-			console.log(this);
+			pbis: []
 		}
 	});
-
 });
