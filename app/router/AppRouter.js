@@ -1,7 +1,8 @@
 define([
 	'models/sprintCollection',
+	'views/sprintView',
 	'backbone'
-], function(sprintCollection) {
+], function(sprintCollection, SprintView) {
 
 	return Backbone.Router.extend({
 		routes: {
@@ -15,9 +16,9 @@ define([
 
 		getSprint: function (id) {
 			this.sprint = this.sprintCollection.get(id);
-			console.log(this.sprint);
+			this.sprintView = new SprintView({ model : this.sprint });
+			this.sprintView.render();
 		}
-
 	});
 
 });

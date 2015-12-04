@@ -1,0 +1,30 @@
+
+    <p></p>
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ten wide column">
+          <h1 class="ui left aligned header">Team: <%= squad %> </h1>
+        </div>
+        <div class="six wide column">
+          <h3 class="wide ui right aligned header">#<%= name %></h3>
+        </div>
+      </div>
+    </div>
+    <div class="ui divider"></div>
+
+<div class="ui container" id="pbis-div">
+
+  <% _.each(PBI, function(pbi, i) { %>
+  <div class="ui grid">
+    <div class="row">
+      <div class="six wide padded column"><%= pbi.title%></div>
+      <div class="two wide padded column right aligned"><%= pbi.status%></div>
+      <div class="one wide padded column right aligned"><%= pbi.sp%></div>
+      <div class="one wide padded column right aligned"><%= pbi.bv%></div>
+      <div class="two wide padded column right aligned"><%= pbi.theme%></div>
+      <div class="two wide padded column right aligned"><%= pbi.epic%></div>
+    </div>
+    </div>
+  </div>
+  <% }) %>
+</div>
