@@ -1,0 +1,23 @@
+{
+  "name": "kunata",
+  "version": "0.0.1",
+  "description": "Agile Open Source Project Management Tool",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tripsta/kunata.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tripsta/kunata/issues"
+  },
+  "homepage": "https://github.com/tripsta/kunata",
+  "dependencies": {
+    "live-server": "^0.8.2"
+  }
+}
