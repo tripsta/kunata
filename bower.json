@@ -16,6 +16,9 @@
     "tests"
   ],
   "dependencies": {
-    "semantic": "semantic-ui#~2.1.6"
+    "semantic": "semantic-ui#~2.1.6",
+    "backbone": "~1.2.3",
+    "requirejs": "~2.1.22",
+    "text": "requirejs-text#~2.0.14"
   }
 }

@@ -33,6 +33,5 @@
   },
   "_source": "git://github.com/Semantic-Org/Semantic-UI.git",
   "_target": "~2.1.6",
-  "_originalSource": "semantic-ui",
-  "_direct": true
+  "_originalSource": "semantic-ui"
 }
