@@ -11,9 +11,8 @@ define([
 			sprint = new Sprint(JSON.parse(sprintData).result);
 			return sprint;
 		},
-		getProductBacklog: function (id) {
-			productBacklog = JSON.parse(productBacklogData).result.PBI;
-			return productBacklog;
+		getProductBacklog: function (id, callback) {
+			callback(JSON.parse(productBacklogData).result.PBI);
 		}
 	});
 });

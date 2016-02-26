@@ -7,6 +7,7 @@ define([
 		template: _.template(productBacklogTemplate),
 
 		initialize: function() {
+			this.model.on('change reset add remove', this.render, this);
 		},
 
 		render: function() {
