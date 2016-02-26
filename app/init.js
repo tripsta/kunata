@@ -4,7 +4,8 @@ requirejs.config({
 		jquery: '../vendor/jquery/dist/jquery.min',
 		underscore: '../vendor/underscore/underscore-min',
 		backbone: '../vendor/backbone/backbone-min',
-		text : "../vendor/text/text"
+		text : "../vendor/text/text",
+		asana : "https://github.com/Asana/node-asana/releases/download/v0.14.1/asana-min"
 	},
 	shim: {
 		backbone: {
