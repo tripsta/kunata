@@ -1,8 +1,19 @@
 define([
 	'models/pbi',
+	'models/fakeAdapter',
 	'backbone'
-], function (pbi) {
+], function (Pbi, FakeAdapter) {
 	return Backbone.Collection.extend({
-		model: pbi
+		model: Pbi,
+
+		getAdapter: function (){
+			return new FakeAdapter();
+		},
+
+		load: function (id) {
+			productBacklog = this.getAdapter().getProductBacklog(id);
+			console.table(productBacklog);
+			this.reset(productBacklog);
+		}
 	});
 });

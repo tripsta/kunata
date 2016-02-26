@@ -12,7 +12,7 @@ define([
 		},
 
 		get: function (id) {
-			sprint = this.getAdapter().get(id);
+			sprint = this.getAdapter().getSprint(id);
 			return sprint;
 		}
 	});

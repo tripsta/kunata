@@ -7,6 +7,7 @@ requirejs.config({
 		text : "../vendor/text/text",
 		asana : "https://github.com/Asana/node-asana/releases/download/v0.14.1/asana-min"
 	},
+	waitSeconds: 30,
 	shim: {
 		backbone: {
 			deps: ['jquery', 'underscore'],
